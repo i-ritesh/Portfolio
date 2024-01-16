@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#" target="_blank">Ritesh Gandalwad</a>
+      </div>
+      <ul>
+        <li><a href="#main">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+      <button id="resumeLink1">Resume</button>
+      <button id="menuButton" onclick="openMenu()">
+        <i class="bx bx-menu"></i>
+      </button>
+    </nav>
+
+    <div class="main" id="main">
+      <div class="left">
+        <h5>Hey, I am</h5>
+        <h3><span>Ritesh Gandalwad</span></h3>
+        <p>
+          Crafting Digital Spaces where Design Meets Functionality with
+          Precision and Passion.
+        </p>
+        <button id="resumeLink2">Resume</button>
+      </div>
+      <div class="right">
+        <!-- Add Image Here Later -->
+      </div>
+    </div>
+
+    <div class="skills" id="skills">
+      <div class="flex">
+        <div class="header">
+          <h5>My Skills</h5>
+          <div class="linkedin">
+            <h3>My Expertise</h3>
+            <button id="connectLink">
+              <i class="bx bxl-linkedin"></i> Connect
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="skill-items">
+        <div class="item">
+          <img src="./assets/html-5.svg" alt="" />
+          <h4>Html-5</h4>
+          <p>
+            Proficient in crafting the structural backbone of websites using
+            HTML. Skillful in creating and organizing content elements, ensuring
+            a solid foundation for web development projects.
+          </p>
+        </div>
+        <div class="item">
+          <img src="./assets/css3.svg" alt="" />
+          <h4>Css3</h4>
+          <p>
+            Expertise in styling and layout with CSS, enhancing visual appeal
+            and user experience. Accomplished in designing responsive and
+            aesthetically pleasing interfaces for seamless web interactions.
+          </p>
+        </div>
+        <div class="item">
+          <img src="./assets/javascript.svg" alt="" />
+          <h4>Javascript</h4>
+          <p>
+            Versatile in JavaScript programming, enabling dynamic and
+            interactive web pages. Proficient in DOM manipulation, user input
+            handling, and creating engaging, client-side functionalities to
+            elevate the overall user experience.
+          </p>
+        </div>
+        <div class="item">
+          <img src="./assets/reactjs.svg" alt="" />
+          <h4>ReactJs</h4>
+          <p>
+            Skilled in building user interfaces with React, a JavaScript
+            library. Experienced in developing efficient and modular components,
+            optimizing rendering performance, and creating seamless, interactive
+            single-page applications.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about" id="about">
+      <div class="left">
+        <!-- Add Image Here Later -->
+      </div>
+      <div class="right">
+        <h5>About</h5>
+        <h3>About Me</h3>
+        <p>
+          Passionate frontend developer with a flair for crafting visually
+          stunning and seamlessly interactive web experiences. Proficient in
+          HTML, CSS, JavaScript, and React, I specialize in translating design
+          concepts into pixel-perfect, responsive interfaces. Dedicated to
+          creating user-centric designs that blend aesthetics with
+          functionality, I thrive on bringing ideas to life through clean and
+          efficient code.
+        </p>
+        <p>
+          Eager to contribute to innovative projects and collaborate with
+          like-minded individuals to push the boundaries of web development.
+        </p>
+      </div>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+      <div class="header">
+        <div class="info">
+          <h5>Recent Projects</h5>
+          <h3>My Portfolio</h3>
+        </div>
+        <button id="openLink">
+          <i class="bx bxl-github"></i> Visit My GitHub
+        </button>
+      </div>
+
+      <div class="portfo-items">
+        <div class="item">
+          <img src="assets/portfolioScreenshot.png" />
+          <div class="info">
+            <h4>Portfolio</h4>
+            <p>
+              A personal showcase of my skills and projects, this portfolio
+              encapsulates my journey as a frontend developer. It not only
+              highlights my technical proficiency but also reflects my design
+              aesthetics.
+            </p>
+            <div class="flexx">
+              <a href="#">Go Live<i class="bx bx-link-external"></i></a>
+              <a href="#">Get Code<i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/weather.png" />
+          <div class="info">
+            <h4>Weather App</h4>
+            <p>
+              A user-friendly weather application built using HTML, CSS, and
+              JavaScript. This app provides real-time weather updates with an
+              intuitive interface, ensuring users stay informed about current
+              conditions effortlessly.
+            </p>
+            <div class="flexx">
+              <a href="#">Go Live<i class="bx bx-link-external"></i></a>
+              <a href="#">Get Code<i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/doctor.png" />
+          <div class="info">
+            <h4>Hospital Record</h4>
+            <p>
+              An advanced hospital record management system crafted with HTML,
+              CSS, and JavaScript. This project streamlines data management,
+              providing an efficient solution for healthcare professionals to
+              organize and access doctors information seamlessly.
+            </p>
+            <div class="flexx">
+              <a href="#">Go Live<i class="bx bx-link-external"></i></a>
+              <a href="#">Get Code<i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="top">
+        <div class="logo">
+          <h3>Ritesh Gandalwad</h3>
+        </div>
+        <ul>
+          <li><a href="#main">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+        <div class="social-links">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+        </div>
+      </div>
+      <div class="separator"></div>
+      <div class="bottom">
+        <p>Made With ❤️ By Ritesh</p>
+        
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
