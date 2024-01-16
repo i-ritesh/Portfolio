@@ -353,7 +353,9 @@ footer .bottom p{
     font-size: 12px;
 }
 
-
+.pointer{
+    cursor: pointer;
+}
 
 @media screen and (max-width: 1200px) {
     
