@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+:root{
+    --main-content-bg: #fff;
 
+    --nav-bg-theme: white;
+    --nav-button-bg: transparent;
+    --nav-button-color: #1c1e53;
+    --nav-button-border: #1c1e53;
+    --anchor-text-theme: #1c1e53;
+
+    --content-bg: #deebee;
+    --content-title-c: #5e3bee;
+    --content-desc-c:  #000;
+
+    --content-border-c: #000;
+
+}
 html{
     scroll-behavior: smooth;
 }
@@ -10,15 +25,18 @@ html{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+body{
+    background-color: var(--main-content-bg);
+}
 
 a{
     text-decoration: none;
-    color: #1c1e53;
+    color: var(--anchor-text-theme) ;
     transition: color 0.3s ease;
 }
 
 a:hover{
-    color: #5e3bee !important;
+    color: #4516ff !important;
 }
 
 h5{
@@ -49,7 +67,7 @@ li{
     border-radius: 10px;
 }
 nav{
-    background-color: #fff;
+    background-color: var(--nav-bg-theme);
     position: sticky;
     top: 0;
     padding: 0 85px;
@@ -58,6 +76,8 @@ nav{
     justify-content: space-between;
     height: 80px;
     box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+    z-index: 2;
 }
 
 nav .logo,
@@ -83,14 +103,16 @@ nav ul,
 footer .top ul{
     display: flex;
     gap: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 nav button{
-    color: #1c1e53;
-    background-color: transparent;
+    color: var(--nav-button-color);
+    background-color: var(--nav-button-bg);
     padding: 12px 16px;
     border-radius: 5px;
-    border: 1px solid #1c1e53;
+    border: 1px solid var(--nav-button-border);
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -108,9 +130,17 @@ nav button#menuButton{
     font-size: 24px;
     padding: 7px;
 }
-
+nav #resumeTheme{
+    height: 30px;
+    background-color: var(--nav-button-bg);
+    color:var(--nav-button-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .main{
-    background-color: #deebee;
+    transition: .3s;
+    background-color: var(--content-bg);
     padding: 90px 85px;
     display: flex;
     align-items: center;
@@ -131,11 +161,11 @@ nav button#menuButton{
 }
 
 .main .left h3 span{
-    color: #5e3bee;
+    color: var(--content-title-c);
 }
 
 .main .left p{
-    color: #1c1e53;
+    color: var(--nav-button-color);
     font-size: 22px;
     margin-top: 20px;
 }
@@ -173,7 +203,7 @@ nav button#menuButton{
 }
 
 .skills .skill-items .item{
-    background-color: #deebee;
+    background-color: var(--content-bg);
     width: 25%;
     border-radius: 10px;
     padding: 32px;
@@ -212,7 +242,7 @@ nav button#menuButton{
     margin-top: 20px;
     font-size: 14px;
     line-height: 22px;
-    color: #1c1e53;
+    color: var(--nav-button-color);
 }
 
 .about{
@@ -223,7 +253,7 @@ nav button#menuButton{
 }
 
 .about .left{
-    background-color: #deebee;
+    background-color: var(--content-bg);
     border-radius: 10px 10px 0 0;
 }
 
@@ -234,10 +264,17 @@ nav button#menuButton{
 .about .right p{
     font-size: 16px;
     margin-top: 30px;
+    
+    color: var(--content-desc-c);
 }
-
+.about .right h5, .about .right h3{
+    color: var(--content-desc-c);
+}
+.skills h3, .skills h5{
+    color: var(--content-desc-c);
+}
 .portfolio{
-    background-color: #deebee;
+    background-color: var(--content-bg);
     padding: 110px 85px;
 }
 
@@ -277,12 +314,13 @@ nav button#menuButton{
 
 .portfolio .portfo-items .item{
     width: 30%;
-    background-color: #fff;
     border-radius: 10px;
     border-bottom: 4px solid transparent;
     cursor: pointer;
     box-shadow: 0 5px 32px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
+    background-color: var(--nav-bg-theme);
+    color: var(--nav-button-color);
 }
 
 .portfolio .portfo-items .item:hover{
@@ -319,10 +357,12 @@ nav button#menuButton{
     font-size: 16px;
 }
 
-
+.header .info h3, .header .info h5{
+    color: var(--content-desc-c);
+}
 
 footer{
-    background-color: #deebee;
+    background-color: var(--content-bg);
     padding: 85px;
     display: flex;
     flex-direction: column;
@@ -345,16 +385,28 @@ footer .top .social-links{
 footer .separator{
     width: 100%;
     height: 1px;
-    background-color: #282938;
+    background-color: var(--content-border-c);
     margin: 30px 0 20px;
 }
 
 footer .bottom p{
     font-size: 12px;
+    color: var(--content-border-c);
 }
-
+footer .logo h3{
+    color: var(--content-border-c);
+}
 .pointer{
     cursor: pointer;
+}
+.cursor-line {
+    height: 2px;
+    position: absolute;
+    height: 2px;
+    background: var(--content-desc-c);
+    opacity: 1;
+    border-radius: 5px;
+    pointer-events: none; /* Ensure lines do not interfere with other elements */
 }
 
 @media screen and (max-width: 1200px) {
@@ -416,7 +468,7 @@ footer .bottom p{
 
 @media screen and (max-width: 992px) {
     
-    nav button{
+    nav .buttons{
         display: none;
     }
 

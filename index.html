@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="parrelAni.css" />
     <title>Portfolio</title>
   </head>
 
   <body>
     <nav>
       <div class="logo">
-        <a href="#" target="_blank">Ritesh Gandalwad</a>
+        <a href="index.html" target="blank">Ritesh Gandalwad</a>
       </div>
       <ul>
         <li><a href="#main">Home</a></li>
@@ -22,13 +22,20 @@
         <li><a href="#about">About Me</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><button id="resumeTheme" onclick="changeTheme()"
+            data-theme="light">dark</button></li>
       </ul>
+    </ul>
+    <!-- <button id="resumeTheme" onclick="changeTheme()" data-theme="light">dark</button> -->
+    <div class="buttons">
       <button id="resumeLink1">Resume</button>
-      <button id="menuButton" onclick="openMenu()">
-        <i class="bx bx-menu"></i>
-      </button>
-    </nav>
+    </div>
+    <button id="menuButton" onclick="openMenu()">
+      <i class="bx bx-menu"></i>
+    </button>
+  </nav>
 
+  <section class="hidden">
     <div class="main" id="main">
       <div class="left">
         <h5>Hey, I am</h5>
@@ -43,61 +50,64 @@
         <!-- Add Image Here Later -->
       </div>
     </div>
+  </section>
 
-    <div class="skills" id="skills">
-      <div class="flex">
-        <div class="header">
-          <h5>My Skills</h5>
-          <div class="linkedin">
-            <h3>My Expertise</h3>
-            <button id="connectLink">
-              <i class="bx bxl-linkedin"></i> Connect
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="skill-items">
-        <div class="item">
-          <img src="./assets/html-5.svg" alt="" />
-          <h4>Html-5</h4>
-          <p>
-            Proficient in crafting the structural backbone of websites using
-            HTML. Skillful in creating and organizing content elements, ensuring
-            a solid foundation for web development projects.
-          </p>
-        </div>
-        <div class="item">
-          <img src="./assets/css3.svg" alt="" />
-          <h4>Css3</h4>
-          <p>
-            Expertise in styling and layout with CSS, enhancing visual appeal
-            and user experience. Accomplished in designing responsive and
-            aesthetically pleasing interfaces for seamless web interactions.
-          </p>
-        </div>
-        <div class="item">
-          <img src="./assets/javascript.svg" alt="" />
-          <h4>Javascript</h4>
-          <p>
-            Versatile in JavaScript programming, enabling dynamic and
-            interactive web pages. Proficient in DOM manipulation, user input
-            handling, and creating engaging, client-side functionalities to
-            elevate the overall user experience.
-          </p>
-        </div>
-        <div class="item">
-          <img src="./assets/reactjs.svg" alt="" />
-          <h4>ReactJs</h4>
-          <p>
-            Skilled in building user interfaces with React, a JavaScript
-            library. Experienced in developing efficient and modular components,
-            optimizing rendering performance, and creating seamless, interactive
-            single-page applications.
-          </p>
-        </div>
+ <section class="hidden"> 
+  <div class="skills" id="skills">
+  <div class="flex">
+    <div class="header">
+      <h5>My Skills</h5>
+      <div class="linkedin">
+        <h3>My Expertise</h3>
+        <button id="connectLink">
+          <i class="bx bxl-linkedin"></i> Connect
+        </button>
       </div>
     </div>
+  </div>
+  <div class="skill-items">
+    <div class="item">
+      <img src="./assets/html-5.svg" alt />
+      <h4>Html-5</h4>
+      <!-- <p>
+        Proficient in crafting the structural backbone of websites using
+        HTML. Skillful in creating and organizing content elements, ensuring
+        a solid foundation for web development projects.
+      </p> -->
+    </div>
+    <div class="item">
+      <img src="./assets/css3.svg" alt />
+      <h4>Css3</h4>
+      <!-- <p>
+        Expertise in styling and layout with CSS, enhancing visual appeal
+        and user experience. Accomplished in designing responsive and
+        aesthetically pleasing interfaces for seamless web interactions.
+      </p> -->
+    </div>
+    <div class="item">
+      <img src="./assets/javascript.svg" alt />
+      <h4>Javascript</h4>
+      <!-- <p>
+        Versatile in JavaScript programming, enabling dynamic and
+        interactive web pages. Proficient in DOM manipulation, user input
+        handling, and creating engaging, client-side functionalities to
+        elevate the overall user experience.
+      </p> -->
+    </div>
+    <div class="item">
+      <img src="./assets/reactjs.svg" alt />
+      <h4>ReactJs</h4>
+      <!-- <p>
+        Skilled in building user interfaces with React, a JavaScript
+        library. Experienced in developing efficient and modular components,
+        optimizing rendering performance, and creating seamless, interactive
+        single-page applications.
+      </p> -->
+    </div>
+  </div>
+</div></section>
 
+  <section class="hidden">
     <div class="about" id="about">
       <div class="left">
         <!-- Add Image Here Later -->
@@ -120,124 +130,104 @@
         </p>
       </div>
     </div>
+  </section>
 
-    <div class="portfolio" id="portfolio">
-      <div class="header">
+<section class="hidden">
+  <div class="portfolio" id="portfolio">
+    <div class="header">
+      <div class="info">
+        <h5>Recent Projects</h5>
+        <h3>My Portfolio</h3>
+      </div>
+      <button id="openLink">
+        <i class="bx bxl-github"></i> Visit My GitHub
+      </button>
+    </div>
+
+    <div class="portfo-items">
+      <div class="item">
+        <img src="assets/ticket.png" />
         <div class="info">
-          <h5>Recent Projects</h5>
-          <h3>My Portfolio</h3>
+          <h4>Ticket Management (React)</h4>
+         
+          <div class="flexx">
+            <a href="https://mock-ticket.netlify.app/">Go Live<i
+                class="bx bx-link-external"></i></a>
+            <a
+              href="https://github.com/i-ritesh/fake-ticket-frontend">Get Code<i
+                class="bx bx-link-external"></i></a>
+          </div>
         </div>
-        <button id="openLink">
-          <i class="bx bxl-github"></i> Visit My GitHub
-        </button>
+      </div>
+      <div class="item">
+        <img src="assets/portfolioScreenshot.png" />
+        <div class="info">
+          <h4>Portfolio</h4>
+          
+          <div class="flexx">
+            <a href="https://i-ritesh.github.io/Portfolio/">Go Live<i
+                class="bx bx-link-external"></i></a>
+            <a href="https://github.com/i-ritesh/Portfolio/">Get Code<i
+                class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="assets/weather.png" />
+        <div class="info">
+          <h4>Weather App</h4>
+         
+          <div class="flexx">
+            <a
+              href="https://weather-app-git-main-riteshs-projects-8a11d910.vercel.app/">Go
+              Live<i class="bx bx-link-external"></i></a>
+            <a
+              href="https://github.com/i-ritesh/weather-app/tree/main/weather-app">Get
+              Code<i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
       </div>
 
-      <div class="portfo-items">
-        <div class="item">
-          <img src="assets/ticket.png" />
-          <div class="info">
-            <h4>Ticket Management (React)</h4>
-            <p>
-              A modern ticket management system built with React and JSON
-              Server. This application streamlines task handling, enabling
-              efficient organization and access to tickets. Features include
-              ticket creation, viewing, editing, sorting, and filtering by
-              priority and status. Secure login ensures authorized access,
-              providing a seamless solution for managing tasks and issues
-              effectively.
-            </p>
-            <div class="flexx">
-              <a href="https://mock-ticket.netlify.app/"
-                >Go Live<i class="bx bx-link-external"></i
-              ></a>
-              <a
-                href="https://github.com/i-ritesh/fake-ticket-frontend"
-                >Get Code<i class="bx bx-link-external"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="assets/portfolioScreenshot.png" />
-          <div class="info">
-            <h4>Portfolio</h4>
-            <p>
-              A personal showcase of my skills and projects, this portfolio
-              encapsulates my journey as a frontend developer. It not only
-              highlights my technical proficiency but also reflects my design
-              aesthetics.
-            </p>
-            <div class="flexx">
-              <a href="https://i-ritesh.github.io/Portfolio/"
-                >Go Live<i class="bx bx-link-external"></i
-              ></a>
-              <a href="https://github.com/i-ritesh/Portfolio/"
-                >Get Code<i class="bx bx-link-external"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="assets/weather.png" />
-          <div class="info">
-            <h4>Weather App</h4>
-            <p>
-              A user-friendly weather application built using HTML, CSS, and
-              JavaScript. This app provides real-time weather updates with an
-              intuitive interface, ensuring users stay informed about current
-              conditions effortlessly.
-            </p>
-            <div class="flexx">
-              <a
-                href="https://weather-app-git-main-riteshs-projects-8a11d910.vercel.app/"
-                >Go Live<i class="bx bx-link-external"></i
-              ></a>
-              <a
-                href="https://github.com/i-ritesh/weather-app/tree/main/weather-app"
-                >Get Code<i class="bx bx-link-external"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        
-      </div>
     </div>
+  </div>
+</section>
 
-    <div class="about" id="contact">
-      <div class="right">
-        <h5>Contact</h5>
-        <h3>Contact Me</h3>
-        <p class="pointer" id="openMailTo">
-          <i class="bx bxl-gmail"></i> <br />
-          gandalwadritesh90@gmail.com
-        </p>
-        <p class="pointer" id="openContactTo">
-          <i class="bx bx-phone-call"></i> <br />
-          7218218112
-        </p>
-        <p class="pointer" id="openLinkedinTo">
-          <i class="bx bxl-linkedin"></i> <br />
-          ritesh-gandalwad
-        </p>
-        <p class="pointer" id="openGithubTo">
-          <i class="bx bxl-github"></i> <br />
-          i-ritesh
-        </p>
-      </div>
+<section class="hidden">
+  <div class="about" id="contact">
+    <div class="right">
+      <h5>Contact</h5>
+      <h3>Contact Me</h3>
+      <p class="pointer" id="openMailTo">
+        <i class="bx bxl-gmail"></i> <br />
+        gandalwadritesh90@gmail.com
+      </p>
+      <p class="pointer" id="openContactTo">
+        <i class="bx bx-phone-call"></i> <br />
+        7218218112
+      </p>
+      <p class="pointer" id="openLinkedinTo">
+        <i class="bx bxl-linkedin"></i> <br />
+        ritesh-gandalwad
+      </p>
+      <p class="pointer" id="openGithubTo">
+        <i class="bx bxl-github"></i> <br />
+        i-ritesh
+      </p>
     </div>
+  </div>
+</section>
 
-    <footer>
-      <div class="top">
-        <div class="logo">
-          <h3>Ritesh Gandalwad</h3>
-        </div>
-        <ul>
-          <li><a href="#main">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+  <footer>
+    <div class="top">
+      <div class="logo">
+        <h3>Ritesh Gandalwad</h3>
+      </div>
+      <ul>
+        <li><a href="#main">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
         <div class="social-links">
           <a href="#"><i class="bx bxl-facebook"></i></a>
           <a href="#"><i class="bx bxl-instagram"></i></a>
@@ -252,5 +242,8 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="changeTheme.js"></script>
+    <script src="cursorTransition.js"></script>
+    <script src="parrelAni.js"></script>
   </body>
 </html>

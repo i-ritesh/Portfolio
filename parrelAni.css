@@ -1,0 +1,216 @@
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translate(-100px, 0);
+    transition: 1s;
+}
+.show{
+    filter: blur(0);
+    transform: translate(0, 0);
+    opacity: 1;
+}
+.hidden .main .left h5{
+    transition-delay: 500ms;
+    transform: translate(-100px, 0);
+    transition:all 1s;
+}
+.show .main .left h5{
+    transform: translate(0, 0);
+}
+.hidden .main .left h3{
+    transition-delay: 800ms;
+    transform: translate(-200px, 0);
+    transition:all 1s;
+}
+.show .main .left h3{
+    transform: translate(0, 0);
+}
+.hidden .main .left p{
+    transition-delay: 900ms;
+    transform: translate(-250px, 0);
+    transition: 1.2s;
+}
+.show .main .left p{
+    transform: translate(0,0);
+}
+.hidden .main .left button{
+    transition-delay: 1000ms;
+    transform: translate(-300px, 0);
+    transition: 1.2s;
+}
+.show .main .left button{
+    transform: translate(0,0);
+}
+
+.hidden .skills .flex .header h5{
+    transition-delay: 500ms;
+    transform: translate(-100px, 0);
+    transition: 1s;
+}
+.show .skills .flex .header h5{
+    transform: translate(0, 0);
+}
+.hidden .skills .flex .header .linkedin h3{
+    transition-delay: 500ms;
+    transform: translate(-100px, 0);
+    transition: 1s;
+}
+.show .skills .flex .header .linkedin h3{
+    transform: translate(0, 0);
+}
+
+.hidden .skills .flex .header .linkedin button{
+    transition-delay: 500ms;
+    transform: translate(-200px, 0);
+    transition:  1s;
+}
+.show .skills .flex .header .linkedin button{
+    transform: translate(0, 0);
+}
+
+.hidden .skills .skill-items .item:nth-child(1){
+    transition-delay: 400ms;
+    transform: translate(-200px,0);
+    transition: 1s;
+}
+.hidden .skills .skill-items .item:nth-child(2){
+    transition-delay: 600ms;
+    transform: translate(-400px,0);
+    transition: 1s;
+}
+.hidden .skills .skill-items .item:nth-child(3){
+    transition-delay: 800ms;
+    transform: translate(-600px,0);
+    transition: 1s;
+}
+.hidden .skills .skill-items .item:nth-child(4){
+    transition-delay: 1000ms;
+    transform: translate(-800px,0);
+    transition: 1s;
+}
+
+.show .skills .skill-items .item:nth-child(1){
+    transform: translate(0,0);
+}
+.show .skills .skill-items .item:nth-child(2){
+    transform: translate(0,0);
+}
+.show .skills .skill-items .item:nth-child(3){
+    transform: translate(0,0);
+}
+.show .skills .skill-items .item:nth-child(4){
+    transform: translate(0,0);
+}
+
+
+.hidden .about .right h5{
+    transition-delay: 709ms;
+    transform: translate(-100px, 0);
+    transition: 1s;
+}
+
+.show .about .right h5{
+    transform: translate(0,0);
+}
+.hidden .about .right h3{
+    transition-delay: 709ms;
+    transform: translate(-150px, 0);
+    transition: 1s;
+}
+
+.show .about .right h3{
+    transform: translate(0,0);
+}
+.hidden .about .right p{
+    transition-delay: 909ms;
+    transform: translate(-200px, 0);
+    transition: 1s;
+}
+
+.show .about .right p{
+    transform: translate(0,0);
+}
+.hidden .portfolio .header{
+    transition-delay: 400ms;
+    transform: translate(-300px);
+    transition: 1s;
+}
+
+.show .portfolio .header{
+    transition-delay: 600ms;
+    transform: translate(0);
+    transition: 1s;
+}
+.hidden .portfolio .portfo-items .item:nth-child(1){
+    transition-delay: 400ms;
+    transform: translate(-300px);
+    transition: 1s;
+}
+.show .portfolio .portfo-items .item:nth-child(1){
+    transform: translate(0);
+}
+
+.hidden .portfolio .portfo-items .item:nth-child(2){
+    transition-delay: 400ms;
+    transform: translate(-500px);
+    transition: 1s;
+}
+.show .portfolio .portfo-items .item:nth-child(2){
+    transform: translate(0);
+}
+
+
+.hidden .portfolio .portfo-items .item:nth-child(3){
+    transition-delay: 400ms;
+    transform: translate(-600px);
+    transition: 1s;
+}
+.show .portfolio .portfo-items .item:nth-child(3){
+    transform: translate(0);
+}
+
+
+
+.hidden .about .right h5{
+    transform: translate(-220px);
+    transition-delay: 400ms;
+    transition: 1s;
+}
+.show .about .right h5{
+    transform: translate(0);
+} 
+.hidden .about .right h3{
+    transform: translate(-320px);
+    transition-delay: 300ms;
+    transition: 1s;
+}
+.show .about .right h3{
+    transform: translate(0);
+} 
+
+.hidden .about .right #openMailTo{
+    transform: translate(0, 100px);
+}
+.show .about .right #openMailTo{
+    transform: translate(0,0);
+}
+
+.hidden .about .right #openContactTo{
+    transform: translate(0, 200px);
+}
+.show .about .right #openContactTo{
+    transform: translate(0,0);
+}
+
+.hidden .about .right #openLinkedinTo{
+    transform: translate(0, 300px);
+}
+.show .about .right #openLinkedinTo{
+    transform: translate(0,0);
+}
+.hidden .about .right #openGithubTo{
+    transform: translate(0, 300px);
+}
+.show .about .right #openGithubTo{
+    transform: translate(0,0);
+}
